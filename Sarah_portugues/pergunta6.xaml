@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sarah_portugues.pergunta6"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False">
+
+    <Grid>
+        <Image Source="fundo2.jpg" Aspect="Fill"/>
+
+        <ScrollView>
+            <VerticalStackLayout Padding="25, 30" Spacing="14">
+                <Border StrokeThickness="0" HeightRequest="160" WidthRequest="160" HorizontalOptions="Center">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="15"/>
+                    </Border.StrokeShape>
+                    <Image Source="per6.jpg" Aspect="AspectFill"/>
+                </Border>
+
+                <Border BackgroundColor="#decfa2" StrokeThickness="0" Padding="10, 5">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Label FontSize="13" TextColor="Black" HorizontalTextAlignment="Center"
+                   Text="6-Sobre Iracema (José de Alencar)
+                          O romance Iracema é uma das maiores obras do indianismo brasileiro. Como o autor constrói a figura de Iracema e o seu relacionamento com o colonizador português Martim?"/>
+                </Border>
+
+                <Border x:Name="bdA" BackgroundColor="#c9b577" StrokeThickness="0" Padding="12, 6">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <RadioButton x:Name="rbA" GroupName="resposta" TextColor="Black" FontSize="12"
+                         Content="A) Iracema é retratada como uma guerreira implacável que expulsa os portugueses das suas terras para proteger o segredo da jurema."/>
+                </Border>
+
+                <Border x:Name="bdB" BackgroundColor="#d3bd94" StrokeThickness="0" Padding="12, 6">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <RadioButton x:Name="rbB" GroupName="resposta" TextColor="Black" FontSize="12"
+         Content="B) O romance mostra uma relação estritamente comercial e política de aliança entre duas tribos rivais mediada por Martim."/>
+                </Border>
+
+                <Border x:Name="bdC" BackgroundColor="#c9b577" StrokeThickness="0" Padding="12, 6">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <RadioButton x:Name="rbC" GroupName="resposta" TextColor="Black" FontSize="12"
+         Content="C) Iracema é a virgem dos lábios de mel, cuja união com Martim simboliza, de forma idealizada e trágica, a própria certidão de nascimento do povo brasileiro."/>
+                </Border>
+
+                <Border x:Name="bdD" BackgroundColor="#d3bd94" StrokeThickness="0" Padding="12, 6">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <RadioButton x:Name="rbD" GroupName="resposta" TextColor="Black" FontSize="12"
+         Content="D)  Ela abandona Martim para regressar à sua tribo nativa assim que descobre que ele já tinha uma esposa na Europa."/>
+                </Border>
+
+                <Label x:Name="lblResultado" FontSize="13" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center"/>
+                <Label x:Name="lblPontuacao" FontSize="13" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center"/>
+
+                <Button x:Name="btnResponder" Text="Responder"
+                FontAttributes="Bold" TextColor="Black" FontSize="16"
+                BackgroundColor="#d5b658" CornerRadius="25"
+                HeightRequest="50" WidthRequest="220"
+                Clicked="OnResponderClicked"/>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

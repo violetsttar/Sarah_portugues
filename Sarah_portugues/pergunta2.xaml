@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sarah_portugues.pergunta2"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False">
+
+    <Grid>
+        <Image Source="fundo2.jpg" Aspect="Fill"/>
+
+        <ScrollView>
+            <VerticalStackLayout Padding="25, 30" Spacing="14">
+                <Border StrokeThickness="0" HeightRequest="160" WidthRequest="160" HorizontalOptions="Center">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="15"/>
+                    </Border.StrokeShape>
+                    <Image Source="per2.jpg" Aspect="AspectFill"/>
+                </Border>
+
+                <Border BackgroundColor="#decfa2" StrokeThickness="0" Padding="10, 5">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Label FontSize="13" TextColor="Black" HorizontalTextAlignment="Center"
+                       Text="2- Quais são as principais características do Romantismo na Europa?"/>
+                </Border>
+
+                <Border x:Name="bdA" BackgroundColor="#c9b577" StrokeThickness="0" Padding="12, 6">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <RadioButton x:Name="rbA" GroupName="resposta" TextColor="Black" FontSize="12"
+                             Content="A) Escapismo, idealização, egocentrismo e subjetivismo."/>
+                </Border>
+
+                <Border x:Name="bdB" BackgroundColor="#d3bd94" StrokeThickness="0" Padding="12, 6">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <RadioButton x:Name="rbB" GroupName="resposta" TextColor="Black" FontSize="12"
+             Content="B) Determinismo, cientificismo, zoomorfização e abordagem de temas socias."/>
+                </Border>
+
+                <Border x:Name="bdC" BackgroundColor="#c9b577" StrokeThickness="0" Padding="12, 6">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <RadioButton x:Name="rbC" GroupName="resposta" TextColor="Black" FontSize="12"
+             Content="C) Racionalismo, resgate da cultura clássica, idealização e subjetivismo."/>
+                </Border>
+
+                <Border x:Name="bdD" BackgroundColor="#d3bd94" StrokeThickness="0" Padding="12, 6">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <RadioButton x:Name="rbD" GroupName="resposta" TextColor="Black" FontSize="12"
+             Content="D) Objetivismo, impessoalidade, impassibilidade e determinismo."/>
+                </Border>
+
+                <Label x:Name="lblResultado" FontSize="13" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center"/>
+                <Label x:Name="lblPontuacao" FontSize="13" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center"/>
+
+                <Button x:Name="btnResponder" Text="Responder"
+                    FontAttributes="Bold" TextColor="Black" FontSize="16"
+                    BackgroundColor="#d5b658" CornerRadius="25"
+                    HeightRequest="50" WidthRequest="220"
+                    Clicked="OnResponderClicked"/>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

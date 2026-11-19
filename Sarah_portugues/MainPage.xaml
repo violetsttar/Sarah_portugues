@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sarah_portugues.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid>
+
+        
+        <Image Source="fundo.png" Aspect="AspectFill" />
+
+        <VerticalStackLayout VerticalOptions="Center"
+                             Padding="25,0"
+                             Spacing="20">
+
+            <Border BackgroundColor="#decfa2"
+                    StrokeThickness="0"
+                    Padding="20">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="25" />
+                </Border.StrokeShape>
+
+                <VerticalStackLayout Spacing="12">
+
+                    <Label Text="Bem-vindo(a) ao Quiz sobre o Romantismo!"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center" />
+
+                    <Label FontSize="14"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Start"
+                           Text="Convido você a embarcar em uma jornada pelo movimento literário que marcou a história com a valorização dos sentimentos, da imaginação e da subjetividade. Entre o amor idealizado, a exaltação da natureza, o nacionalismo e os conflitos emocionais, o Romantismo revelou uma nova forma de enxergar o mundo e expressar a essência humana. Neste quiz, você poderá testar seus conhecimentos sobre suas principais características, gerações, autores e obras, explorando a riqueza desse importante período literário." />
+
+                </VerticalStackLayout>
+            </Border>
+
+            <Button Text="Começar"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    BackgroundColor="#3B2A1A"
+                    CornerRadius="20"
+                    HeightRequest="50"
+                    WidthRequest="200"
+                    Clicked="OnClicked" />
+
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>
